@@ -1,0 +1,1000 @@
+   16  cd appbt/
+   17  ls
+   18  ls -la
+   19  cd config
+   20  ls
+   21  cp -a config_inc.php.sample config_inc.php
+   22  ls -la
+   23  vim config_inc.php
+   24  cd /var/www/html/appbt/
+   25  vim  config/config_inc.php
+   26  vim  /var/www/html/appbt/library/utf8/native/core.php
+   27  yum install php-xml
+   28  yum install php5-xml
+   29  php -v
+   30  vim /etc/php.ini
+   31  php -v
+   32  yum install php5.6-xml
+   33  echo "<?php echo utf8_decode('Fête de Ramadan');" > utf8test.php
+   34  php utf8test.php
+   35  rm -f utf8test.php
+   36  php utf8test.php
+   37  vim /var/www/html/appbt/library/utf8/native/core.php
+   38  vim config/config_inc.php
+   39  exit
+   40  cd /var/www/html/nanaPHP
+   41  cd projects/
+   42  cd lonabmobile/
+   43  cd model
+   44  ls
+   45  ls -la
+   46  cd course/
+   47  ls
+   48  cd ..
+   49  cd par
+   50  cd pari/
+   51  ls
+   52  vim Compte.class.php 
+   53  cd ..
+   54  vim config_inc.php
+   55  yum search utf8_decode
+   56  cd ..
+   57  ls
+   58  cp -a news_menu_page.php test.php
+   59  echo "" > test.php
+   60  vim test.php
+   61  vim /etc/php.ini
+   62  more /usr/bin/xml2-config
+   63  service httpd restart
+   64  mysql -p
+   65  cd /var/www/html/
+   66  cd nanaPHP
+   67  ls -ltr
+   68  cd projects/
+   69  ls -ltr
+   70  cd lona
+   71  cd lonabmobile/
+   72  ls -ltr
+   73  vim model/ussd/api.class.php
+   74  mysql -root -p
+   75  cd /var/www/
+   76  ll
+   77  cd html/
+   78  ll
+   79  cd ..
+   80  ll
+   81  pwd
+   82  mysql -h 192.168.1.20 -u aveplus_user
+   83  mysql -h 192.168.1.20 -u aveplus-user
+   84  mysql -h 192.168.1.20 -u aveplus_user -p
+   85  mysql -h 192.168.1.20 -u aveplus-user -p
+   86  mysql -h 192.168.1.20 -u aveplus_user -p
+   87  mysql -u aveplus_user -p
+   88  mysql -u aveplus-user -p
+   89  mysql -h 192.168.1.20 -u aveplus_user -p 
+   90  cd ..
+   91  exit
+   92  cd /var/www/html/
+   93  cd nanaPHP/projects/lonabmobile/
+   94  ls
+   95  cd controller/
+   96  ls
+   97  cd ..
+   98  cd model/
+   99  ls
+  100  cd parametre/
+  101  ls
+  102  vi Session.class.php 
+  103  vim Session.class.php 
+  104  cd ..
+  105  cd controller/
+  106  ls
+  107  vim ControllerSession.php 
+  108                          $alert = "danger";
+  109  cd ..
+  110  exit
+  111  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  112  cd controller/
+  113  vim ControllerCompte.php 
+  114  vim ControllerCourse.php 
+  115  cd ..
+  116  cd model/
+  117  ls
+  118  cd utilisateur/
+  119  ls
+  120  vim Utilisateur.class.php 
+  121  cd ..
+  122  cd controller/
+  123  vim ControllerPointvente.php 
+  124  tzdata
+  125  vi /etc/sysconfig/clock
+  126  locate date.timezone
+  127  locate php.ini
+  128  vi /etc/php.ini
+  129  /etc/init.d/httpd restart
+  130  chmod -R 775 /var/www/html/
+  131  ls -al /var/
+  132  chmod -R 777 /var/www/html/
+  133  ls -al /var/
+  134  cd /var/www/html/nanaPHP/projects/lonabmobile/controller/
+  135  ls
+  136  vim ControllerPointvente.php 
+  137  vim ControllerAgence.php 
+  138  exit
+  139  cat /etc/passwd
+  140  cat /etc/passwd | grep r
+  141  cat /etc/passwd | grep roue
+  142  useradd rouedraogo
+  143  smbpasswd -a rouedraogo 
+  144  vi /etc/samba/smb.conf
+  145  /etc/init.d/nmb restart
+  146  /etc/init.d/smb restart
+  147  cd /opt/
+  148  ll
+  149  cd AVEPLUS_FS/
+  150  LL
+  151  ll
+  152  cd WORK\ SHOP/
+  153  ll
+  154  /etc/init.d/nmb restart
+  155  vi /etc/samba/smb.conf
+  156  /etc/init.d/nmb restart
+  157  /etc/init.d/smb restart
+  158  smbpasswd -a rouedraogo 
+  159  /etc/init.d/smb restart
+  160  /etc/init.d/nmb restart
+  161  /etc/init.d/smb restart
+  162  vim /etc/group
+  163  cd /home/aveplus
+  164  ll
+  165  cd /var/www/
+  166  ll
+  167  useradd nestle_ftp
+  168  cd /home/nestle_ftp/
+  169  mkdir -p /home/nestle_ftp/nestle
+  170  ll
+  171  mount --bind /var/www/html/ /home/nestle_ftp/nestle/
+  172  passwd nestle_ftp
+  173  cd /home/nestle_ftp/
+  174  du -sh *
+  175  cd nestle/
+  176  ll
+  177  cd ..
+  178  cd /var/www/html/
+  179  ll
+  180  umount --bind /var/www/html/ /home/nestle_ftp/nestle/
+  181  umount /var/www/html/ /home/nestle_ftp/nestle/
+  182  help umount
+  183  man umount
+  184  ll
+  185  pwd
+  186  umount --bind /var/www/html/ /home/nestle_ftp/nestle/
+  187  man umount
+  188  umount -h /var/www/html/ /home/nestle_ftp/nestle/
+  189  umount -d /var/www/html/ /home/nestle_ftp/nestle/
+  190  ll
+  191  cd /home/nestle_ftp/
+  192  cd nestle/
+  193  ls
+  194  umount --bind /var/www/html/ /home/nestle_ftp/nestle/
+  195  mount --bind /var/www/html/ /home/nestle_ftp/nestle/
+  196  cd /var/www/
+  197  ls
+  198  cd html/
+  199  ls
+  200  mkdir nestle
+  201  mount --bind /var/www/html/nestle/ /home/nestle_ftp/nestle/
+  202  touch alain.php
+  203  ll
+  204  pwd
+  205  ll | alai
+  206  ll |grep alai
+  207  rm alain.php 
+  208  ll
+  209  cd nestle/
+  210  touch alain.php
+  211  ls
+  212  ll
+  213  umount -d /var/www/html/ /home/nestle_ftp/nestle/
+  214  umount -d /var/www/html/nestle/ /home/nestle_ftp/nestle/
+  215  ll
+  216  pwd
+  217  cd /home/nestle_ftp/
+  218  ls
+  219  cd nestle/
+  220  ll
+  221  mount --bind /var/www/html/nestle/ /home/nestle_ftp/nestle/
+  222  set -m d:u:nestle_ftp:rwX -R /var/www/html/nestle/
+  223  cd /var/www/
+  224  ll
+  225  cd html/
+  226  ll
+  227  setfacl -m d:u:nestle_ftp:rwX -R /var/www/html/nestle/
+  228  ll
+  229  chown -R nestle_ftp:nestle_ftp nestle/
+  230  ll
+  231  ls
+  232  ll
+  233  cd /var/www/html/
+  234  ls
+  235  cd nestle/
+  236  ls
+  237  cd tombola/
+  238  ls
+  239  cd ..
+  240  ll
+  241  cd tombola/src/
+  242  ls
+  243  ll
+  244  cd config/
+  245  ll
+  246  vim config.php
+  247  vim config.db.php
+  248  ll
+  249  vim config.db.php
+  250  ll
+  251  vim conf.db.php
+  252  cd /var/www/html/
+  253  ll
+  254  cd nanaPHP
+  255  ll
+  256  cd projects/lonabmobile/
+  257  ll
+  258  cd view/
+  259  ll
+  260  cd ..
+  261  ll
+  262  cd ..
+  263  ll
+  264  cd web/
+  265  ll
+  266  cd web/
+  267  cd ..
+  268  ll
+  269  cd nestle/
+  270  ll
+  271  cd ..
+  272  chmod 777 -R nestle/ 
+  273  ll
+  274  cd nestle/
+  275  ll
+  276  cd tombola/
+  277  ll
+  278  cd src/
+  279  ll
+  280  cd /etc/init.d/
+  281  ll
+  282  vim httpd 
+  283  cd /etc/httpd/conf/
+  284  ll
+  285  vim httpd.conf
+  286  cd ;;
+  287  cd ..
+  288  service /etc/init.d/httpd restart
+  289  restart /etc/init.d/httpd 
+  290  cd /var/www/html/nestle/
+  291  ll
+  292  cd tombola/
+  293  ll
+  294  ls
+  295  cd src/
+  296  ls
+  297  ls -a
+  298  cd view/
+  299  ls -a
+  300  cd ..
+  301  cd tombola/
+  302  ls -a
+  303  vim .htaccess 
+  304  ll
+  305  man ls
+  306  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  307  ls
+  308  ls -a
+  309  cd ..
+  310  ls -a
+  311  cd lonabmobile/
+  312  cd ..
+  313  ls -a
+  314  vim .htaccess 
+  315  ls -a
+  316  ll
+  317  cd projects/lonabmobile/controller/
+  318  ll
+  319  vim ControllerExercice.php 
+  320  cd ..
+  321  cd model/
+  322  ll
+  323  cd parametre/
+  324  ll
+  325  vim Exercice.class.php 
+  326  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  327  ll
+  328  cd /var/www/html/
+  329  cd nestle/
+  330  ll
+  331  cd tombola/
+  332  ll
+  333  cd Framework/
+  334  ll
+  335  vim Config.php 
+  336  ll
+  337  cd ..
+  338  ll
+  339  ls -a
+  340  vim .htaccess 
+  341  ls -a .htaccess 
+  342  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  343  cd controller/
+  344  vim ControllerStatistique.php 
+  345  cd ..
+  346  cd view/
+  347  cd Statistique/
+  348  vim index.php
+  349  vim stat_gains_semaine.php 
+  350  vim stat_payforme_semaine.php 
+  351  cd /var/www/html/nanaPHP/projects/lonabmobile/controller/
+  352  cd ..
+  353  ll
+  354  cd ..
+  355  ll
+  356  cd ..
+  357  ll
+  358  ls -a .htaccess 
+  359  ls -l .htaccess 
+  360  cd ..
+  361  cd html/
+  362  ls
+  363  cd nanaPHP/projects/lonabmobile/
+  364  cd view/
+  365  cd Groupe/
+  366  ls
+  367  exit
+  368  cd /var/www/html/appbt/config
+  369  vim config_inc.php
+  370  exit
+  371  cd /var/www/html/
+  372  cd ussdgateway/
+  373  ls -ltr
+  374  cd config
+  375  ls
+  376  vim simulaters.ini
+  377  cd ..
+  378  cd appbt/
+  379  ls
+  380  cd config
+  381  ls
+  382  vim config_inc.php
+  383  cd /var/www/html/nestle/
+  384  cd tombola/
+  385  ll
+  386  chmod -R 644 .htaccess 
+  387  cd src/controller/
+  388  ll
+  389  cd ..
+  390  ll
+  391  vim .htaccess 
+  392  ll
+  393  ls -a
+  394  ls -a .htaccess 
+  395  ls -l .htaccess 
+  396  chmod -R u+rwx .htaccess 
+  397  chmod -R a+rwx .htaccess 
+  398  ls -l .htaccess 
+  399  cd ..
+  400  ls
+  401  cd nestle/tombola/
+  402  cd src/
+  403  ll
+  404  cd ..
+  405  ll
+  406  mv .htaccess .htaccessAncien
+  407  cd /opt/AVEPLUS_FS/DEVELOPPEURS/
+  408  ls
+  409  cd Ivan/
+  410  ls
+  411  ll
+  412  mv .htaccess /var/www/html/nestle/tombola/
+  413  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  414  cd view/Session/
+  415  ll
+  416  vim index.php 
+  417  cd /var/www/html/nestle/tombola/
+  418  chown -R nestle_ftp:nestle_ftp .htaccess
+  419  ls -l .htaccess
+  420  cd ..
+  421  chown -R nestle_ftp:nestle_ftp nestle/
+  422  mysql -u adm_lonab -p
+  423  exit
+  424  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  425  ll
+  426  cd controller/
+  427  vim ControllerCompte.php 
+  428  cd ..
+  429  cd model/
+  430  ll
+  431  cd course/
+  432  ll
+  433  cd ..
+  434  cd jeton/
+  435  ll
+  436  cd ..
+  437  cd controller/
+  438  cd /var/www/html/
+  439  ls cd /etc/vsftpd
+  440  ls -ltr /etc/vsftpd
+  441  more /etc/vsftpd/user_list
+  442  more /etc/vsftpd/ftpusers
+  443  more /etc/vsftpd/vsftpd.conf
+  444  ls -ltr /etc/vsftpd
+  445  chkconfig --level 2345 vsftpd on
+  446  chkconfig --list
+  447  chkconfig --list | grep vsftpd
+  448  cd appbt/
+  449  cd config
+  450  ls -ltr
+  451  vim config_inc.php
+  452  mysql -u adm_bt -p
+  453  exit
+  454  cd /var/www/html/appbt/
+  455  vim config/config_inc.php
+  456  crontab -l
+  457  exit
+  458  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  459  ls -la
+  460  git status
+  461  pwd
+  462  git status
+  463  ls /var/www/html/lonabmobile/src/lonabmobile/view/
+  464  ls -la /var/www/html/lonabmobile/src/lonabmobile/view/
+  465  git status
+  466  pwd
+  467  exit
+  468  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  469  cp -a -rf controller/ControllerCompte.php /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerCompte.php
+  470  \cp -a -rf controller/ControllerCompte.php /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerCompte.php
+  471  \cp -a -rf controller/ControllerSession.php /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerSession.php
+  472  \cp -a -rf controller/ControllerUssdparieur.php /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerUssdparieur.php
+  473  \cp -a -rf model/course/Session.class.php /var/www/html/lonabmobile/src/lonabmobile/model/course/Session.class.php
+  474  \cp -a -rf model/parametre/Session.class.php /var/www/html/lonabmobile/src/lonabmobile/model/parametre/Session.class.php
+  475  \cp -a -rf model/pari/Ticket.class.php /var/www/html/lonabmobile/src/lonabmobile/model/pari/Ticket.class.php
+  476  \cp -a -rf service/ServiceTarification.php /var/www/html/lonabmobile/src/lonabmobile/service/ServiceTarification.php
+  477  \cp -a -rf view/Gain/voir.php   /var/www/html/lonabmobile/src/lonabmobile/view/Gain/voir.php
+  478  \cp -a -rf model/commission/CompteCommission.class.php /var/www/html/lonabmobile/src/lonabmobile/model/commission/CompteCommission.class.php
+  479  \cp -a -rf controller/ControllerDiffusiongains.php /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerDiffusiongains.php
+  480  \cp -a -rf controller/ControllerFeedback.php /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerFeedback.php
+  481  \cp -a -rf controller/ControllerPaiement.php /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerPaiement.php
+  482  \cp -a -rf model/client/Diffusiongains.class.php /var/www/html/lonabmobile/src/lonabmobile/model/client/Diffusiongains.class.php 
+  483  \cp -a -rf model/client/Feedback.class.php /var/www/html/lonabmobile/src/lonabmobile/model/client/Feedback.class.php
+  484  \cp -a -rf model/client/Graph.class.php /var/www/html/lonabmobile/src/lonabmobile/model/client/Graph.class.php
+  485  \cp -a -rf model/client/Statistique.class.php /var/www/html/lonabmobile/src/lonabmobile/model/client/Statistique.class.php
+  486  ls -la
+  487  git status
+  488  exit
+  489  cd /var/www/html/nanaPHP/projects/
+  490  ls
+  491  cd lonabmobile/
+  492  cd model/
+  493  ll
+  494  cd ..
+  495  chown aveplus_ftp:aveplus_ftp model
+  496  cd model/
+  497  ll
+  498  chown aveplus_ftp:aveplus_ftp client/
+  499  ll
+  500  chmod 777 -R client/
+  501  chmod 777 -R commission/
+  502  chown aveplus_ftp:aveplus_ftp commission/
+  503  chown aveplus_ftp:aveplus_ftp Syncbus.class.php 
+  504  chmod 777 -R Syncbus.class.php 
+  505  ll
+  506  cd ..
+  507  cd controller/
+  508  ll
+  509  chmod 777 -R ControllerApi.php 
+  510  chmod 777 -R ControllerDiffusiongains.php 
+  511  chmod 777 -R ControllerFeedback.php 
+  512  chmod 777 -R ControllerPaiement.php 
+  513  chmod 777 -R ControllerSyncbus.php 
+  514  ll
+  515  chown aveplus_ftp:aveplus_ftp ControllerApi.php 
+  516  chown aveplus_ftp:aveplus_ftp ControllerDiffusiongains.php 
+  517  chown aveplus_ftp:aveplus_ftp ControllerFeedback.php 
+  518  chown aveplus_ftp:aveplus_ftp ControllerPaiement.php 
+  519  chown aveplus_ftp:aveplus_ftp ControllerSyncbus.php 
+  520  cd ..
+  521  cd model/
+  522  ll
+  523  cd kyc
+  524  ll
+  525  chmod 777 -R Sms.class.php 
+  526  chown aveplus_ftp:aveplus_ftp Sms.class.php 
+  527  ll
+  528  exit
+  529  cd /var/www/html/lonabmobile/src/lonabmobile/view/
+  530  ls
+  531  ls -l
+  532  chown aveplus_ftp:aveplus_ftp Diffusiongains/
+  533  chown aveplus_ftp:aveplus_ftp Feedback/
+  534  clear
+  535  lms -l
+  536  ls -l
+  537  chmod -R 777 Diffusiongains/
+  538  chmod -R 777 Feedback/
+  539  clear
+  540  ll
+  541  ls -l
+  542  cd Diffusiongains/
+  543  ls
+  544  cd ..
+  545  cd Feedback/
+  546  ls
+  547  vim index.php 
+  548  echo "" >index.php 
+  549  vim index.php 
+  550  echo "" >index.php 
+  551  vim index.php 
+  552  cd /var/www/html/lonabmobile/app/config/
+  553  ls
+  554  vim lonabmobile.php 
+  555  cd /var/www/html/lonabmobile/src/lonabmobile/controller/
+  556  ls
+  557  echo "" >ControllerFeedback.php
+  558  vim ControllerFeedback.php
+  559  echo "" >ControllerDiffusiongains.php 
+  560  vim ControllerDiffusiongains.php 
+  561  cd ../model/
+  562  ls
+  563  ls client/
+  564  less client/Feedback.class.php 
+  565  cd client/
+  566  ls
+  567  echo "" >Diffusiongains.class.php
+  568  vim Diffusiongains.class.php
+  569  echo "">Feedback.class.php
+  570  vim Feedback.class.php
+  571  cd ../service_Deleted/
+  572  cd ..
+  573  ls
+  574  cd ..
+  575  ls
+  576  cd service/
+  577  ls
+  578  vim ServiceEnvoiSMS.php
+  579  EXIT
+  580  exit
+  581  cd /var/www/html/
+  582  ll
+  583  cd lonabmobile/
+  584  ll
+  585  cd src/
+  586  ll
+  587  cd lonabmobile/
+  588  ll
+  589  cd controller/
+  590  ll
+  591  cd ..
+  592  cd lonabmobile/
+  593  cd src/lonabmobile/controller/
+  594  ll
+  595  vim ControllerCourse.php 
+  596  echo date
+  597  date
+  598  ll
+  599  cd ..
+  600  cd view/
+  601  ll
+  602  cd Course/
+  603  ll
+  604  vim index.php 
+  605  vim ajouter.php 
+  606  cd ..
+  607  ll
+  608  cd nanaPHP/projects/lonabmobile/
+  609  ll
+  610  cd view/
+  611  ll
+  612  chown aveplus_ftp:aveplus_ftp Comission/
+  613  chown aveplus_ftp:aveplus_ftp Diffusiongains/
+  614  chown aveplus_ftp:aveplus_ftp Feedback/
+  615  chown aveplus_ftp:aveplus_ftp sous_gabarit.php 
+  616  ll
+  617  chmod -R 777 Comission/
+  618  chmod -R 777 Diffusiongains/
+  619  chmod -R 777 Feedback/
+  620  ll
+  621  chmod -R 777 sous_gabarit.php 
+  622  ll
+  623  /var/spool/mail/root
+  624  cd /var/spool/mail/root
+  625  more /var/spool/mail/root
+  626  tail -50 /var/spool/mail/root
+  627  exit
+  628  cd /var/www/html/lonabmobile/
+  629  vim /var/www/html/lonabmobile/app/command/autorun
+  630  crontab -e
+  631  mysql -p
+  632  exit
+  633  cd /var/www/html/ussdgateway/
+  634  cd config/
+  635  ls -la
+  636  vim applications.ini
+  637  vim Config.php
+  638  cd /var/www/html/lonabmobile/src/lonabmobile/model/
+  639  cd ussd/
+  640  vim main.inc.class.php
+  641  cd ..
+  642  cd app/config/lonabmobile.php
+  643  vim app/config/lonabmobile.php
+  644  cd .
+  645  cd 
+  646  cd /var/www/html/lonabmobile/src/
+  647  cd lonabmobile/
+  648  cd model/ussd/
+  649  vim main.inc.class.php
+  650  cd /var/www/html/nanaPHP/projects/lonabmobile/model/ussd/
+  651  vim main.inc.class.php
+  652  mysql -p
+  653  pwd
+  654  vim /var/www/html/nanaPHP/app/command/autorun
+  655  cp /var/www/html/nanaPHP/app/var/cache/ /var/www/html/nanaPHP/app/var/tmp
+  656  cp -R /var/www/html/nanaPHP/app/var/cache /var/www/html/nanaPHP/app/var/tmp
+  657  ls -ltr /var/www/html/nanaPHP/app/var/tmp/
+  658  ls -ltr /var/www/html/nanaPHP/app/var/
+  659  chown aveplus_ftp:aveplus_ftp /var/www/html/nanaPHP/app/var/tmp
+  660  ls -ltr /var/www/html/nanaPHP/app/var/
+  661  chmod 777 /var/www/html/nanaPHP/app/var/tmp
+  662  ls -ltr /var/www/html/nanaPHP/app/var/
+  663  cp -a -R /var/www/html/nanaPHP/app/var/tmp /var/www/html/lonabmobile/app/var/tmp
+  664  ls -ltr /var/www/html/lonabmobile/app/var/
+  665  \cp -a -f /var/www/html/nanaPHP/app/command/autorun /var/www/html/lonabmobile/app/command/autorun
+  666  more /var/www/html/lonabmobile/app/command/autorun
+  667  vim /var/www/html/nanaPHP/projects/lonabmobile/controller/ControllerUssd.php
+  668  vim /var/www/html/lonabmobile/app/command/autorun
+  669  vim /var/www/html/nanaPHP/app/command/autorun
+  670  vim /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerUssd.php
+  671  vim /var/www/html/nanaPHP/projects/lonabmobile/service/Smslib.php
+  672  vim /var/www/html/lonabmobile/src/lonabmobile/service/Smslib.ph
+  673  vim /var/www/html/lonabmobile/src/lonabmobile/service/Smslib.php
+  674  mysql -p
+  675  vim /var/www/html/lonabmobile/app/command/autorun send_sms
+  676  php /var/www/html/lonabmobile/app/command/autorun send_sms
+  677  vim /var/www/html/lonabmobile/app/command/autorun
+  678  php /var/www/html/lonabmobile/app/command/autorun sendsms
+  679  vim /var/www/html/lonabmobile/app/command/autorun
+  680  vim /var/www/html/nanaPHP/app/command/autorun
+  681  php /var/www/html/lonabmobile/app/command/autorun sendsms
+  682  php -v /var/www/html/lonabmobile/app/command/autorun sendsms
+  683  vim /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerUssd.php
+  684  vim /var/www/html/lonabmobile/vendor/smslib/Sent.class.php
+  685  php -v /var/www/html/lonabmobile/app/command/autorun sendsms
+  686  php /var/www/html/lonabmobile/app/command/autorun sendsms
+  687  vim /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerUssd.php
+  688  php /var/www/html/lonabmobile/app/command/autorun sendsms
+  689  ls -ltr /var/www/html/lonabmobile/app/var/tmp/
+  690  rm /var/www/html/lonabmobile/app/var/tmp/sendsms_process_idrun
+  691  ls -ltr /var/www/html/lonabmobile/app/var/tmp/
+  692  vim /var/www/html/lonabmobile/app/command/autorun
+  693  php /var/www/html/lonabmobile/app/command/autorun sendsms
+  694  vim /var/www/html/lonabmobile/src/lonabmobile/controller/ControllerUssd.php
+  695  vim /var/www/html/lonabmobile/vendor/smslib/Sent.class.php
+  696  vim /var/www/html/lonabmobile/src/lonabmobile/service/Smslib.php
+  697  php /var/www/html/lonabmobile/app/command/autorun sendsms
+  698  crontab -e
+  699  vim /var/www/html/lonabmobile/app/command/autorun
+  700  vim /var/www/html/nanaPHP/app/command/autorun
+  701  crontab -l
+  702  vim /var/www/html/lonabmobile/app/command/autorun
+  703  vim /var/www/html/nanaPHP/app/command/autorun
+  704  ls -ltr /var/www/html/lonabmobile/src/lonabmobile/service/
+  705  vim /var/www/html/lonabmobile/src/lonabmobile/service/Smslib.php
+  706  vim /var/www/html/nanaPHP/projects/lonabmobile/service/Smslib.php
+  707  vim /var/www/html/nanaPHP/app/command/autorun
+  708  vim /var/www/html/lonabmobile/app/command/autorun
+  709  ls -ltr /var/www/html/lonabmobile/app/var/tmp/
+  710  crontab -e
+  711  exit
+  712  cd /var/www/html/
+  713  ll
+  714  cd lonabmobile/
+  715  ll
+  716  cd app
+  717  ll
+  718  cd command/
+  719  ll
+  720  contrab -e
+  721  crontab -e
+  722  gmdate("Y-m-d H:i:s")
+  723  date
+  724  time
+  725  time()
+  726  cd /var/www/html/
+  727  ll
+  728  cd lonabmobile/
+  729  ll
+  730  cd app/command/
+  731  ll
+  732  php "/var/www/html/lonabmobile/app/command/autorun"
+  733  php "/var/www/html/lonabmobile/app/command/autorun" Session::activersession
+  734  php "/var/www/html/lonabmobile/app/command/autorun"
+  735  vim "/var/www/html/lonabmobile/app/command/autorun"
+  736  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  737  ll
+  738  cd ..
+  739  ll
+  740  cd ..
+  741  ll
+  742  cd /var/www/html/
+  743  ll
+  744  cd lonabmobile/src/lonabmobile/model/client/
+  745  ll
+  746  vim Diffusiongains.class.php 
+  747  cd /var/www/html/nanaPHP
+  748  ll
+  749  vim app/command/autorun 
+  750  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  751  ll
+  752  cd ..
+  753  ll
+  754  cd ..
+  755  ll
+  756  vim app/command/autorun 
+  757  crontab -e
+  758  cd ..
+  759  ll
+  760  cd lonabmobile/src/lonabmobile/controller/
+  761  ll
+  762  cd /var/www/html/
+  763  ll
+  764  cd nanaPHP
+  765  exit
+  766  cd /var/www/html/lonabmobile/
+  767  ll
+  768  cd ..
+  769  ll
+  770  cd nanaPHP/projects/
+  771  ll
+  772  cd lonabmobile/
+  773  ll
+  774  vim controller/ControllerStatistique.php 
+  775  cd ..
+  776  ll
+  777  cd ..
+  778  ll
+  779  vim app/command/autorun 
+  780  cd /var/www/html/nanaPHP/projects/lonabmobile/controller/
+  781  ll
+  782  cd /var/www/html/
+  783  ll
+  784  cd lonabmobile/src/lonabmobile/controller/
+  785  ll
+  786  vim ControllerExercice.php 
+  787  cd ..
+  788  vim model/parametre/Exercice.class.php 
+  789  cd /var/spool/mail/root 
+  790  cd /var/spool/mail
+  791  ll
+  792  cd root 
+  793  vim root 
+  794  cd lonabmobile/src/lonabmobile/controller/
+  795  cd lonabmobile/src/lonabmobile/controller
+  796  cd ..
+  797  cd lonabmobile/src/lonabmobile/controller
+  798  exit
+  799  cd /var/www/html/lonabmobile/src/lonabmobile/controller/
+  800  vim ControllerSession.php 
+  801  vim ../model/parametre/Session.class.php 
+  802  cd ..
+  803  ll
+  804  cd ..
+  805  ll
+  806  cd src/lonabmobile/controller/
+  807  ll
+  808  echo "" > ControllerStatistique.php 
+  809  vim ControllerStatistique.php 
+  810  vim ../model/Statistique.class.php 
+  811  cd ../model/
+  812  ll
+  813  cd ..
+  814  cd nanaPHP/projects/lonabmobile/model/
+  815  ll
+  816  chown -R 777 api/
+  817  chown -R 777 compte
+  818  chown -R 777 droit/
+  819  chown -R 777 gain/
+  820  chown -R 777 log
+  821  chown -R 777 statistique/
+  822  ll
+  823  chown -R aveplus_ftp:aveplus_ftp api/
+  824  ll
+  825  chown -R aveplus_ftp:aveplus_ftp compte/
+  826  chown -R aveplus_ftp:aveplus_ftp droit/
+  827  chown -R aveplus_ftp:aveplus_ftp gain/
+  828  chown -R aveplus_ftp:aveplus_ftp log/
+  829  chown -R aveplus_ftp:aveplus_ftp statistique/
+  830  ll
+  831  chmod -R 777 api/
+  832  chmod -R 777 compte/
+  833  chmod -R 777 droit/
+  834  chmod -R 777 gain/
+  835  chmod -R 777 log/
+  836  chmod -R 777 statistique/
+  837  ll
+  838  cd api/
+  839  cd ..
+  840  cd compte/
+  841  ll
+  842  chmod -R 777 Compte.class.php 
+  843  ll
+  844  chmod -R 777 Operation.class.php 
+  845  chmod -R 777 Transaction.class.php 
+  846  ll
+  847  chown aveplus_ftp:aveplus_ftp Compte.class.php 
+  848  chown aveplus_ftp:aveplus_ftp Operation.class.php 
+  849  chown aveplus_ftp:aveplus_ftp Transaction.class.php 
+  850  ll
+  851  cd ..
+  852  ll
+  853  cd course/
+  854  ll
+  855  cd ..
+  856  cd droit/
+  857  ll
+  858  chmod -R 777 G_privilege.class.php 
+  859  ll
+  860  chmod -R 777 Groupe.class.php 
+  861  chmod -R 777 Privilege.class.php 
+  862  chmod -R 777 U_privilege.class.php 
+  863  chown aveplus_ftp:aveplus_ftp G_privilege.class.php 
+  864  chown aveplus_ftp:aveplus_ftp Groupe.class.php 
+  865  chown aveplus_ftp:aveplus_ftp Privilege.class.php 
+  866  chown aveplus_ftp:aveplus_ftp U_privilege.class.php 
+  867  ll
+  868  cd ..
+  869  cd gain/
+  870  ll
+  871  chown aveplus_ftp:aveplus_ftp Gain_parieur.class.php 
+  872  chown aveplus_ftp:aveplus_ftp Gain_course.class.php 
+  873  chown aveplus_ftp:aveplus_ftp Paiement_gain.class.php 
+  874  cd ..
+  875  ll
+  876  rm Config.class.php 
+  877  rm Graph.class.php 
+  878  ll
+  879  cd gain/
+  880  ll
+  881  chmod -R 777 Gain_parieur.class.php 
+  882  chmod -R 777 Gain_course.class.php 
+  883  cd /var/www/html/
+  884  cd nanaPHP/projects/lonabmobile/model/
+  885  cd gain/
+  886  chmod -R 777 Gain_course.class.php 
+  887  chmod -R 777 Gain_parieur.class.php 
+  888  chmod -R 777 Paiement_gain.class.php 
+  889  ll
+  890  cd ..
+  891  ll
+  892  cd kyc/
+  893  ll
+  894  chmod -R 777 Diffusiongains.class.php 
+  895  chmod -R 777 Feedback.class.php 
+  896  chown  aveplus_ftp: aveplus_ftp Diffusiongains.class.php 
+  897  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  898  ll
+  899  cd model/
+  900  cd kyc/
+  901  ll
+  902  chown aveplus_ftp:aveplus_ftp Feedback.class.php 
+  903  ll
+  904  cd ..
+  905  ll
+  906  cd parametre/
+  907  ll
+  908  chown aveplus_ftp:aveplus_ftp Config.class.php 
+  909  chown aveplus_ftp:aveplus_ftp Region.class.php 
+  910  chown aveplus_ftp:aveplus_ftp TypeNotification.class.php 
+  911  ll
+  912  chmod -R 777 Config.class.php 
+  913  chmod -R 777 Region.class.php 
+  914  chmod -R 777 TypeNotification.class.php 
+  915  ll
+  916  cd ..
+  917  ll
+  918  cd pari/
+  919  ll
+  920  chmod -R 777 Solveur345.class.php 
+  921  chmod -R 777 SolveurCouple.class.php 
+  922  chown aveplus_ftp:aveplus_ftp Solveur345.class.php 
+  923  chown aveplus_ftp:aveplus_ftp SolveurCouple.class.php 
+  924  ll
+  925  cd ..
+  926  ll
+  927  cd statistique/
+  928  ll
+  929  chmod -R 777 Graph.class.php 
+  930  chmod -R 777 Statistique.class.php 
+  931  chmod -R 777 Stattransaction.class.php 
+  932  chown aveplus_ftp:aveplus_ftp Graph.class.php 
+  933  chown aveplus_ftp:aveplus_ftp Statistique.class.php 
+  934  chown aveplus_ftp:aveplus_ftp Stattransaction.class.php 
+  935  ll
+  936  cd ..
+  937  ll
+  938  cd utilisateur/
+  939  ll
+  940  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  941  cd model/
+  942  ll
+  943  cd par
+  944  cd pari/
+  945  ll
+  946  chown aveplus_ftp:aveplus_ftp Combinaison.class.php 
+  947  ll
+  948  cd ..
+  949  md syncbus
+  950  mk syncbus
+  951  mkdir syncbus
+  952  ll
+  953  chown aveplus_ftp:aveplus_ftp syncbus/
+  954  mv Syncbus.class.php syncbus/
+  955  ll
+  956  chmod -R 777 syncbus/
+  957  ll
+  958  cd syncbus/
+  959  ll
+  960  cd /var/www/html/nanaPHP/projects/lonabmobile/
+  961  ll
+  962  cd /var/www/html/ussdgateway/
+  963  cd config
+  964  ls -ltr
+  965  vim applications.ini
+  966  vim simulaters.ini
+  967  df -k
+  968  cd /var/www/html/lonabmobile/
+  969  ll
+  970  cd src/lonabmobile/controller/
+  971  vim ControllerStatistique.php 
+  972  cd ..
+  973  cd view/Statistique/
+  974  ll
+  975  vim index.php 
+  976  cd ..
+  977  cd controller/
+  978  vim COntrS
+  979  vim ControllerStatistique.php 
+  980  /sbin/service start
+  981  /sbin/service stop
+  982  /sbin/service restart
+  983  cd /sbin/service 
+  984  /sbin/service vsftpd stop 
+  985  /sbin/service vsftpd start
+  986  ll
+  987  cd pmubmobile/
+  988  ll
+  989  cd ..
+  990  ll
+  991  cd src/
+  992  ll
+  993  exit
+  994  cd /etc/init.d/
+  995  ll
+  996  vim vsftpd 
+  997  /sbin/service vsftpd restart
+  998  exit
+  999  cd /home/
+ 1000  ls -la
+ 1001  cd lonabmobile
+ 1002  ls
+ 1003  more client.conf
+ 1004  ps -ef | grep ftp
+ 1005  more /etc/vsftpd/vsftpd.conf
+ 1006  history | grep ftp
+ 1007  pwd
+ 1008  mount --bind /var/www/html/nanaPHP /home/lonabmobile/lonab/
+ 1009  ls -la
+ 1010  cd lonab/
+ 1011  ls -la
+ 1012   more /etc/
+ 1013   more /etc/vsftpd/user_list
+ 1014  q!
+ 1015  history > log.txt

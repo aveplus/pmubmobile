@@ -1,0 +1,1 @@
+<?php require_once "prod".APP_FILE_EXTENSION;

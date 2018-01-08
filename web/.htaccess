@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^(.*)$ /nanaPHP/projects/lonabmobile/ressources/publics/$1 [NC,QSA,L]

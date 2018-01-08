@@ -1,0 +1,3 @@
+# Réécrit une URL de type contollerName/actionName/idParam en index.php?controleur=contollerName&methode=actionName&id=idParam
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9_]*)/?([a-zA-Z_]*)?/?([a-zA-Z0-9_+():-]*)?/?$ index.php?controller=$1&methode=$2&id=$3 [NC,L]

@@ -1,0 +1,85 @@
+<?php
+	define('NANAPHP_ZONE',dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR);
+	require_once NANAPHP_ZONE . 'app/Const.php';
+	require_once NANAPHP_ZONE . 'vendor/nanaPHP/Core/Config.php';
+	require_once NANAPHP_ZONE . 'app/config/'.\app\RUNNING_APP.'.php';
+	require_once NANAPHP_ZONE . 'vendor/nanaPHP/Loader.php';
+	
+	if( isset($argv[1]) ){
+		$autorun['params'] = array();
+        	$autorun['lock_process'] = FALSE;
+		switch($argv[1]){
+			case 'ouvrirSession':
+				$autorun['action'] = 'Session::ouvrirSession';
+				break 1;
+			case 'fermerSession':
+                                $autorun['action'] = 'Session::fermerSession';
+                                break 1;
+			case 'activerParisAuto':
+                                $autorun['action'] = 'Course::activerParisAuto';
+                                break 1;
+			case 'desactivervente':
+                                $autorun['action'] = 'Course::desactivervente';
+                                break 1;			
+			case 'ussd':
+				$autorun['action'] = 'Ussd::test';
+				break 1;
+			case 'ouvrirExercice':
+                                $autorun['action'] = 'Exercice::ouvrirExercice';
+                                break 1;
+			case 'fermerExercice':
+                                $autorun['action'] = 'Exercice::fermerExercice';
+                                break 1;
+		        case 'diffusion':
+                                $autorun['action'] = 'Diffusiongains::diffusion';
+                                break 1;
+			case 'annulerGain':
+                                $autorun['action'] = 'Gain::annulerGain';
+                                break 1;
+			case 'depouiller':
+                                $autorun['action'] = 'Gain::lancerDepouille_exec';
+				$autorun['params'][] = $argv[2];
+                                break 1;
+			case 'ventiler':
+                                $autorun['action'] = 'Comission::ventiler';
+                                break 1;
+			case 'sendsms':
+				$autorun['action'] = 'Ussd::send_sms';
+                		// $autorun['lock_process'] = 'sendsms_process_id';
+				break 1;
+			case 'initStatLigne':
+				$autorun['action'] = 'Statistique::initStatLigne';
+					$autorun['lock_process'] = 'initStatLigne_id';
+                		break 1;
+			case 'sendpush':
+				$autorun['action'] = 'Messagepush::sendpush';
+				//$autorun['lock_process'] = 'sendpush_id';
+                		break 1;
+			default: 						
+				$autorun['action'] = $argv[1]; 	
+				break;
+		}
+		/* Verification du processus */
+		if($autorun['lock_process']){
+			if(file_exists(NANAPHP_ZONE.'app/var/tmp/'.$autorun['lock_process'].'.run'))
+				exit();
+			else
+				file_put_contents(NANAPHP_ZONE.'app/var/tmp/'.$autorun['lock_process'].'.run',gmdate('Y-m-d H:i:s'));
+		}
+		/* Execution de la tache */
+		\nanaPHP\Core\Application::call($autorun['action'],$autorun['params']);
+		if($autorun['lock_process'])
+			unlink(NANAPHP_ZONE.'app/var/tmp/'.$autorun['lock_process'].'.run');
+	}
+	else{
+		print("\r\n"."----------------------------------- nanaPHP autorun --------------------------------------"."\r\n".
+			  "ERREUR d'appel de la commande AUTORUN!"."\r\n".
+			  "Quel fonctionnalite souhaitez-vous executer?"."\r\n".
+			  "La commande prend toujours un parametre de type Compte::modifier::90125 ou un alias."."\r\n".
+			  "L'alias doit a cet effet etre defini dans le fichier app/command/autorun"."\r\n"."\r\n".
+			  "Exemple avec parametre normal: "."\r\n".
+			  "php \"".dirname(__FILE__).DIRECTORY_SEPARATOR."autorun\" Compte::modifier::90125"."\r\n"."\r\n".
+			  "Ou encore avec alias:"."\r\n".
+			  "php \"".dirname(__FILE__).DIRECTORY_SEPARATOR."autorun\" modifier_compte"."\r\n".
+			  "------------------------------------------------------------------------------------------"."\r\n");
+	}

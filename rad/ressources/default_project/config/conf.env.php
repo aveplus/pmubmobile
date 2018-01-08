@@ -1,0 +1,1 @@
+<?php require_once "dev".APP_FILE_EXTENSION;
